@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scrollable"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_name"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_name"
+                    android:text="Name"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_name"
+                    android:hint="Name"
+                    android:layout_marginHorizontal="50dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_address"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_address"
+                    android:layout_marginStart="30dp"
+                    android:text="Address"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_address"
+                    android:hint="Address"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_street"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_street"
+                    android:layout_marginStart="30dp"
+                    android:text="Street"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_street"
+                    android:hint="Street"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_city"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_city"
+                    android:text="City"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_city"
+                    android:hint="City"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_gps"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_gps"
+                    android:text="GPS"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_gps"
+                    android:hint="gps"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_state"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_state"
+                    android:text="State"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_state"
+                    android:hint="State"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_country"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_country"
+                    android:text="Country"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_country"
+                    android:hint="Country"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_mobile"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_mobile"
+                    android:text="Mobile"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_mobile"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_email"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_email"
+                    android:text="Email"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginHorizontal="40dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:onClick="onClickSave"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            android:onClick="onClickGpsPartner"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:onClick="onDeletePartner"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
